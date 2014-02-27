@@ -1,0 +1,11 @@
+{
+  "name": "music-reminder",
+  "description": "Music reminder",
+  "version": "0.0.1",
+  "dependencies": {
+    "coffee-script": "1.7.1",
+    "express": "3.x"
+  },
+  "author": "Tobias Aigner",
+  "license": "MIT"
+}
