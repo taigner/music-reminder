@@ -7,6 +7,7 @@ var MusicRow = React.createClass({
       <tr>
         <td>{this.props.music.artist}</td>
         <td>{this.props.music.song}</td>
+        <td>{this.props.music.genre}</td>
       </tr>
     );
   }
@@ -25,6 +26,7 @@ var MusicTable = React.createClass({
           <tr>
             <th>Artist</th>
             <th>Song</th>
+            <th>Genre</th>
           </tr>
         </thead>
         <tbody>{rows}</tbody>
