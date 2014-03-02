@@ -1,10 +1,15 @@
 express = require "express"
-fs = require "fs"
 
 app = express()
+
+app.get "/", (req, res) ->
+  res.sendfile "client/music-reminder.html"
+
+app.get "/music-reminder.js", (req, res) ->
+  res.sendfile "client/music-reminder.js"
+
 app.get "/music", (req, res) ->
-  fs.readFile "data/music.json", (e, data) ->
-    res.send JSON.parse(data)
+  res.sendfile "data/music.json"
 
 start = () ->
   app.listen 3000
